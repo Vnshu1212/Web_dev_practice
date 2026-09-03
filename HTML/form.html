@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="">Select City</option>
+            <option value="noida">Noida</option>
+            <option value="delhi">Delhi</option>
+            <option value="gurgaon">Gurgaon</option>
+        </select>
+        <br><br>
+
+        <label for="message">About You:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30"
+            placeholder="Write something about yourself"></textarea>
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">I agree to the Terms & Conditions</label>
+        <br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
