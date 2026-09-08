@@ -1,32 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Website</title>
     <style>
-    .heading
-    {color: blue;
-    font-size: 40px;}
-    .intro
-    {
-        color: green;
-    }
-    .profile{
-        background-color: lightgray;
-        width: 400px;
-        padding: 50px;
-        border: 2px solid black;
-        margin: 30px;
-        border-radius: 15px;
-    }
-</style>
+        .heading {
+            color: blue;
+            font-size: 40px;
+            text-align: center;
+            font-family: arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 1.5;
+        }
+
+        .intro {
+            color: green;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .profile {
+            background-color: lightgray;
+            width: 400px;
+            padding: 50px;
+            border: 2px solid black;
+            margin: 30px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .profile:hover {
+    background-color: white;
+}
+        #main-profile{
+            border: 3px solid red;
+        }
+        .highlight{
+            background-color: rgb(255, 238, 2);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="profile">
+    <div class="profile" id="main-profile">
         <h1 class="heading">My First web page</h1>
-        <p class="intro">Name : Vanshika</p>
+        <p class="intro highlight">Name : Vanshika
+            <br>
+            Location : Noida
+        </p>
     </div>
 </body>
+
 </html>
